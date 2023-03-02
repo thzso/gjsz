@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@200;300&display=swap');
+
+.home {
+  height: inherit;
+  width: 100%;
+  background-image: url("../assets/images/orfeusz_a_kozlekedesi_muzeumban.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+#name {
+
+  position: absolute;
+  right: 1px;
+  bottom: 16vh;
+  font-size: 5rem;
+  line-height: 5.2rem;
+  display: inline-block;
+  color: white;
+
+  font-family: 'Noto Serif SC', serif;
+  letter-spacing: 0.5rem;
+  font-weight: 200;
+  text-shadow: 1px 1px 5px black
+
+}
+
+@media screen and (max-width: 767px) {
+
+  .home{
+    background-image: url("../assets/mask3.jpg");
+   
+  }
+  #name{
+    color: white;
+    bottom: 2vh;
+    text-align: center;
+    font-size: 4rem;
+    line-height: 4.2rem;
+    font-weight: 300;
+    /* text-shadow: 1px 1px 5px black */
+  }
+}
+

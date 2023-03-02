@@ -1,0 +1,35 @@
+
+
+.menuClose{
+  width: 34px;
+  height: 34px;
+  border-radius: 100%;
+ background-color: white;
+ margin: 1rem;
+ z-index: 2;
+ align-self: flex-end;
+ /* position: fixed; */
+ position: absolute;
+ right:0;
+ top: 0;
+}
+
+.menuOpen{
+  width: 34px;
+  height: 34px;
+
+ background-color: white;
+ margin: 1rem;
+ z-index: 2;
+ align-self: flex-end;
+ position: fixed;
+ right:0;
+ top: 0;
+
+}
+
+.sidebar{
+  position: fixed;
+    width: 100vw;
+    z-index: 1;
+}

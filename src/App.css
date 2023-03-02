@@ -1,0 +1,46 @@
+.App {
+  height: inherit;
+  display: flex;
+  flex-direction: row;
+}
+
+
+/* most ez van használva? ( layoutokba van elem hozzá:  */
+.app_outlet {
+  height: inherit;
+  flex-grow: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+}
+
+/* ez van valamire használva??? */
+.app_linksContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+
+  letter-spacing: 0.2rem;
+}
+
+
+
+@media screen and (max-width: 767px) {
+.App{
+  flex-direction: column;
+}
+
+.app_outlet{
+
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+
+  
+
+}
+
+}

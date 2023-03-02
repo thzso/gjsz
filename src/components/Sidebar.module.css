@@ -1,0 +1,106 @@
+
+.sideBar {
+  padding-right: 5rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #151414;
+  color: #c7c7c7;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-style: normal;
+  flex-shrink: 0;
+
+}
+
+a {
+  text-decoration: none;
+}
+
+.navLink {
+  color: #c7c7c7;
+  padding: 0 0rem 0 5rem;
+}
+.navLink:hover {
+  color: white;
+}
+
+.activeStyle {
+  padding: 0 0rem 0 5rem;
+  color: white;
+  border-block-end: 1px solid white;
+  margin-right: auto;
+
+}
+.menuClose{
+  width: 34px;
+  height: 34px;
+  border-radius: 100%;
+ background-color: black;
+ margin: 1rem;
+ z-index: 2;
+ align-self: flex-end;
+ /* position: fixed; */
+ position: absolute;
+ right:0;
+ top: 25vh;
+}
+
+
+
+
+
+@media screen and (max-width: 767px) {
+
+  .sideBar{
+    background-color: transparent;
+
+    font-size: 34px;
+    position: fixed;
+    top: 0;
+      width: 100vw;
+      height: 100vh;
+      overflow:hidden;
+      z-index: 1;
+      padding: 0;
+      position: relative;
+     
+      
+  }
+
+  .navLink {
+    padding: 0 0 1rem 0;
+    background-color: #151414c7;
+    text-align: center;
+    color: white;
+
+
+
+
+
+    /* ez ment , csak valahogy reverse módon
+    background: black;
+    color: white;
+    mix-blend-mode: multiply; */
+    
+
+    
+  }
+
+  .activeStyle {
+    padding: 0 0 1rem 0;
+    margin: 0;
+    border-block-end:none;
+    background-color: #151414c7;
+    text-align: center;
+    color: #c7c7c7;
+    /* background: black;
+    color: white;
+    mix-blend-mode: screen; */
+    
+
+
+  }
+
+
+
+}
