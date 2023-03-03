@@ -4,7 +4,7 @@ import CancelIcon from "@mui/icons-material/Cancel";
 
 const Popup = ({ clickedImage, setOpen, open }) => {
   const ref = useRef();
-
+console.log("popupban",clickedImage)
   const handleClick = () => {
     setOpen(!open);
   };
