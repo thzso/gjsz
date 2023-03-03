@@ -11,7 +11,6 @@ const Digital = () => {
     const getData = async () => {
       let res = await axios.get(`/.netlify/functions/${urlEnding}`);
       setData(res.data);
-      console.log(res);
     };
 
     getData();

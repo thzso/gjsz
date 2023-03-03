@@ -3,8 +3,6 @@ import styles from "./Sidebar.module.css";
 import CancelIcon from "@mui/icons-material/Cancel";
 
 const Sidebar = ({ windowWidth, open, setOpen }) => {
-  console.log(open, windowWidth);
-
   return (
     <div className={styles.sideBar}>
       {windowWidth < 767 && open && (

@@ -6,7 +6,7 @@ import styles from "./Layout2.module.css";
 
 const Layout2 = ({ windowWidth }) => {
   const [open, setOpen] = useState(false);
-  console.log(open);
+
   return (
     <>
       {!open && (

@@ -19,7 +19,6 @@ function App() {
     };
   }, []);
 
-  console.log(windowWidth);
 
   return (
     <div className="App">
