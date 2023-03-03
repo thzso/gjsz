@@ -1,4 +1,4 @@
-import DataDisplay from "../components/Datadisplay";
+import DataDisplay from "../components/DataDisplay";
 
 const Paintings = () => {
   const urlEnding = "paintings";
