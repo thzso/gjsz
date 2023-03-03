@@ -17,8 +17,9 @@ const DataDisplay = ({ urlEnding }) => {
 
   useEffect(() => {
     const getData = async () => {
-      let res = await axios.get(`http://localhost:8080/${urlEnding}`);
+      let res = await axios.get(`/.netlify/functions/${urlEnding}`);
       setData(res.data);
+      console.log(res)
     };
 
     getData();
@@ -51,7 +52,7 @@ const DataDisplay = ({ urlEnding }) => {
             <Skeleton variant="rectangular">
               <img
                 className={styles.images}
-                src={`http://localhost:8080/${image.filename}`}
+                src={`../../public/images/${image.technique}/${image.filename}`}
                 alt=""
               />
             </Skeleton>
@@ -61,7 +62,7 @@ const DataDisplay = ({ urlEnding }) => {
             style={{ display: isLoading ? "none" : "block" }}
             onLoad={() => handleOnload(image.filename)}
             className={styles.images}
-            src={`http://localhost:8080/${image.filename}`}
+            src={`../../public/images/${image.technique}/${image.filename}`}
             alt=""
           />
         </div>

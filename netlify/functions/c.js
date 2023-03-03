@@ -1,0 +1,98 @@
+export async function handler() {
+  return {
+    statusCode: 200,
+    body: JSON.stringify([
+      {
+        title: "",
+        filename: "beta22.jpg",
+        detais: "",
+        link: "",
+        technique: "comics",
+      },
+      {
+        title: "",
+        filename: "c_px.jpg",
+        detais: "",
+        link: "",
+        technique: "comics",
+      },
+      {
+        title: "",
+        filename: "comic1.jpg",
+        detais: "",
+        link: "",
+        technique: "comics",
+      },
+      {
+        title: "",
+        filename: "comic2.jpg",
+        detais: "",
+        link: "",
+        technique: "comics",
+      },
+      {
+        title: "",
+        filename: "FaunPan.jpg",
+        detais: "",
+        link: "",
+        technique: "comics",
+      },
+      {
+        title: "",
+        filename: "gyAQ.jpg",
+        detais: "",
+        link: "",
+        technique: "comics",
+      },
+      {
+        title: "",
+        filename: "J.jpg",
+        detais: "",
+        link: "",
+        technique: "comics",
+      },
+      {
+        title: "",
+        filename: "p3_72dpi2.jpg",
+        detais: "",
+        link: "",
+        technique: "comics",
+      },
+      {
+        title: "",
+        filename: "proliferation.jpg",
+        detais: "",
+        link: "",
+        technique: "comics",
+      },
+      {
+        title: "",
+        filename: "q.jpg",
+        detais: "",
+        link: "",
+        technique: "comics",
+      },
+      {
+        title: "",
+        filename: "s0217_ps_Kadmon_137dpi.jpg",
+        detais: "",
+        link: "",
+        technique: "comics",
+      },
+      {
+        title: "",
+        filename: "sw2khfdx_137.jpg",
+        detais: "",
+        link: "",
+        technique: "comics",
+      },
+      {
+        title: "",
+        filename: "vaacus.jpg",
+        detais: "",
+        link: "",
+        technique: "comics",
+      },
+    ]),
+  };
+}

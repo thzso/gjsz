@@ -62,7 +62,7 @@ a {
       overflow:hidden;
       z-index: 1;
       padding: 0;
-      position: relative;
+      /* position: relative; */
      
       
   }

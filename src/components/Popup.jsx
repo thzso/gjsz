@@ -28,7 +28,7 @@ const Popup = ({ clickedImage, setOpen, open }) => {
 
         <img
           className={styles.image}
-          src={`http://localhost:8080/${clickedImage.filename}`}
+          src={`../../public/images/${clickedImage.technique}/${clickedImage.filename}`}
           alt=""
         />
       </div>

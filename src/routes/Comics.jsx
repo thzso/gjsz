@@ -1,5 +1,5 @@
 import DataDisplay from "../components/DataDisplay";
-import comics from "../assets/comics"
+
 
 const Comics = () => {
 
