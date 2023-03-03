@@ -1,9 +1,24 @@
 import DataDisplay from "../components/DataDisplay";
 
-const Paintings = () => {
-  const urlEnding = "paintings";
+import { useState, useEffect } from "react";
+import axios from "axios";
 
-  return <DataDisplay {...{ urlEnding }} />;
+const Paintings = () => {
+  const urlEnding = "paintings"
+
+  const [data, setData] = useState([]);
+
+  useEffect(() => {
+    const getData = async () => {
+      let res = await axios.get(`/.netlify/functions/${urlEnding}`);
+      setData(res.data);
+      console.log(res)
+    };
+
+    getData();
+  }, []);
+
+  return <DataDisplay {...{ urlEnding, data }} />;
 };
 
 export default Paintings;

@@ -5,9 +5,9 @@ import { Skeleton } from "@mui/material";
 import styles from "./DataDisplay.module.css"
 import { useOutletContext } from "react-router-dom";
 
-const DataDisplay = ({ urlEnding }) => {
+const DataDisplay = ({ urlEnding, data }) => {
   const [isLoading, setIsLoading] = useState(true);
-  const [data, setData] = useState([]);
+
   const [open, setOpen] = useState(false);
   const [clickedImage, setClickedImage] = useState({});
   const [loadedImages, setLoadedImages] = useState([]);
@@ -15,15 +15,7 @@ const DataDisplay = ({ urlEnding }) => {
   const {windowWidth} = useOutletContext()
  
 
-  useEffect(() => {
-    const getData = async () => {
-      let res = await axios.get(`/.netlify/functions/${urlEnding}`);
-      setData(res.data);
-      console.log(res)
-    };
 
-    getData();
-  }, []);
 
   const handleClick = (image) => {
     setClickedImage(image);
