@@ -1,7 +1,7 @@
 import DataDisplay from "../components/Datadisplay";
 
 const Paintings = () => {
-  const urlEnding = "p";
+  const urlEnding = "paintings";
 
   return <DataDisplay {...{ urlEnding }} />;
 };

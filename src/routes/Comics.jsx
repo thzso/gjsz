@@ -4,7 +4,7 @@ import DataDisplay from "../components/DataDisplay";
 const Comics = () => {
 
  
-  const urlEnding = "c";
+  const urlEnding = "comics";
   return <DataDisplay {...{ urlEnding }} />;
 };
 

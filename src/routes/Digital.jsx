@@ -2,7 +2,7 @@ import DataDisplay from "../components/Datadisplay";
 
 
 const Digital = () => {
-  const urlEnding = "d";
+  const urlEnding = "digital";
   return <DataDisplay {...{ urlEnding }} />;
 };
 

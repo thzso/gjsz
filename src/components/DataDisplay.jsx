@@ -52,7 +52,7 @@ const DataDisplay = ({ urlEnding }) => {
             <Skeleton variant="rectangular">
               <img
                 className={styles.images}
-                src={`../../public/images/${image.technique}/${image.filename}`}
+                src={`/images/${image.technique}/${image.filename}`}
                 alt=""
               />
             </Skeleton>
@@ -62,7 +62,7 @@ const DataDisplay = ({ urlEnding }) => {
             style={{ display: isLoading ? "none" : "block" }}
             onLoad={() => handleOnload(image.filename)}
             className={styles.images}
-            src={`../../public/images/${image.technique}/${image.filename}`}
+            src={`/images/${image.technique}/${image.filename}`}
             alt=""
           />
         </div>

@@ -7,7 +7,7 @@ const Etchings = () => {
   // console.log("context : ",windowWidth)
 
 
-  const urlEnding = "a";
+  const urlEnding = "etchings";
 
   return <DataDisplay {...{ urlEnding }} />;
 };
