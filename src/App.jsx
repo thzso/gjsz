@@ -2,8 +2,6 @@ import { useEffect, useState } from "react";
 import Layout1 from "./components/Layout1";
 import Layout2 from "./components/Layout2";
 
-
-
 import "./App.css";
 
 function App() {
@@ -24,7 +22,13 @@ function App() {
   console.log(windowWidth);
 
   return (
-    <div className="App">{windowWidth > 767 ? <Layout1 {...{windowWidth}}/> : <Layout2 {...{windowWidth}}/>}</div>
+    <div className="App">
+      {windowWidth > 767 ? (
+        <Layout1 {...{ windowWidth }} />
+      ) : (
+        <Layout2 {...{ windowWidth }} />
+      )}
+    </div>
   );
 }
 

@@ -1,18 +1,16 @@
-import { Outlet } from "react-router-dom"
-import Sidebar from "./Sidebar"
-const Layout1 =({windowWidth})=> {
+import { Outlet } from "react-router-dom";
+import Sidebar from "./Sidebar";
+const Layout1 = ({ windowWidth }) => {
 
-  // itt elérem egyáltalkán az APP css-t?
-
-  return(
+  return (
     <>
-    <div className="app_outlet">
-      <Outlet context={{windowWidth: windowWidth}}></Outlet>
-    </div>
+      <div className="app_outlet">
+        <Outlet context={{ windowWidth: windowWidth }}></Outlet>
+      </div>
 
-    <Sidebar />
-  </>
-  )
-}
+      <Sidebar />
+    </>
+  );
+};
 
-export default Layout1
+export default Layout1;

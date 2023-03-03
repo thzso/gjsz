@@ -18,7 +18,7 @@ const Paintings = () => {
     getData();
   }, []);
 
-  return <DataDisplay {...{ urlEnding, data }} />;
+  return <DataDisplay {...{data }} />;
 };
 
 export default Paintings;

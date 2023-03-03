@@ -8,15 +8,13 @@
 #linksContainer {
   display: flex;
   flex-direction: column;
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
   height: auto;
   justify-content: center;
 }
 
 .textUrls {
-
   flex-direction: column;
-
 }
 
 .icons,
@@ -38,23 +36,16 @@ h3 {
   margin: 0.2rem;
 }
 
-a{
+a {
   color: #151414;
 }
-a:hover{
+a:hover {
   color: grey;
 }
-/* a:visited{
-  color: red;
-} */
 
-.logo{
+.logo {
   width: 3rem;
 }
-
-/* a:active {
-  color: blue;
-} */
 
 #test {
   height: 100vh;
@@ -65,10 +56,9 @@ a:hover{
     height: 100vh;
   }
 
-.icons,
-.textUrls {
-  padding: 0rem;
-  font-size: 1.1rem;
-}
-
+  .icons,
+  .textUrls {
+    padding: 0rem;
+    font-size: 1.1rem;
+  }
 }

@@ -15,7 +15,7 @@ const Layout2 = ({ windowWidth }) => {
         </div>
       )}
 
-      {open && <Sidebar {...{open, setOpen, windowWidth}} />}
+      {open && <Sidebar {...{ open, setOpen, windowWidth }} />}
       <div className="app_outlet">
         <Outlet context={{ windowWidth: windowWidth }}></Outlet>
       </div>
