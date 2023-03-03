@@ -2,9 +2,6 @@
 
 command = ""
 functions = "netlify/functions"
-publish ="dist"
 
-[[redirects]]
-from = "*"
-to = "/"
+
 
