@@ -5,7 +5,7 @@ const Etchings = () => {
 
 
 
-  const urlEnding = "etching";
+  const urlEnding = "etchings";
 
   return <DataDisplay {...{ urlEnding }} />;
 };
