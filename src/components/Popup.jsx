@@ -4,7 +4,6 @@ import CancelIcon from "@mui/icons-material/Cancel";
 
 const Popup = ({ clickedImage, setOpen, open }) => {
   const ref = useRef();
-console.log("popupban",clickedImage)
   const handleClick = () => {
     setOpen(!open);
   };
@@ -28,7 +27,7 @@ console.log("popupban",clickedImage)
 
         <img
           className={styles.image}
-          src={`../../public/images/${clickedImage.technique}/${clickedImage.filename}`}
+          src={clickedImage.url}
           alt=""
         />
       </div>

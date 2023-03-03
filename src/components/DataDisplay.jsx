@@ -18,7 +18,7 @@ const DataDisplay = ({ urlEnding, data }) => {
     setClickedImage(image);
     setOpen(!open);
   };
-console.log(clickedImage)
+
   const handleOnload = (filename) => {
     setLoadedImages((prev) => [...prev, filename]);
   };
